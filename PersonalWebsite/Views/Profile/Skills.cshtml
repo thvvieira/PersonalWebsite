@@ -1,6 +1,6 @@
 ﻿@model PersonalWebsite.Models.Profile.SkillsViewModel
 
-<p class="skills">Primary Skills</p>
+@*<p class="skills">Conhecimento primário</p>*@
 @foreach (var skill in Model.PrimarySkills)
 {
     var width = "width" + skill.Value;
@@ -9,7 +9,7 @@
     </div>    
 }
 
-<p class="skills">Secondary Skills</p>
+@*<p class="skills">Conhecimento secundário</p>*@
 @foreach (var skill in Model.SecondarySkills)
 {
     var width = "width" + skill.Value;

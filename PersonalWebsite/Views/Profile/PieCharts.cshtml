@@ -87,12 +87,12 @@ window.onload = function () {
             var labels = [], vals = [], keys = [];
             
             var top_languages = split_arrays(data.top_languages, "name", "count");
-            labels[0] = "Languages";
+            labels[0] = "Linguagens";
             keys[0] = prefix_array(top_languages[0], ' %%');
             vals[0] = top_languages[1];
             
             var top_environments = split_arrays(data.top_environments, "name", "count");
-            labels[1] = "Environments";
+            labels[1] = "Ambientes";
             keys[1] = prefix_array(top_environments[0], ' %%');
             vals[1] = top_environments[1];
 
@@ -102,7 +102,7 @@ window.onload = function () {
             vals[2] = top_frameworks[1];
 
             var top_tools = split_arrays(data.top_tools, "name", "count");
-            labels[3] = "Tools";
+            labels[3] = "Ferramentas";
             keys[3] = prefix_array(top_tools[0], ' %%');
             vals[3] = top_tools[1];
 
@@ -118,6 +118,6 @@ window.onload = function () {
 }
 </script>
 
-<section id="coderbits" data-coderbits-username="imdsm">
+<section id="coderbits" data-coderbits-username="thvvieira">
     <img src="~/Content/images/loading.gif" />
 </section>

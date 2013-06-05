@@ -25,9 +25,9 @@ namespace PersonalWebsite.Controllers
             var model = new AboutMeViewModel();
 
             StringBuilder sb = new StringBuilder();
-            sb.Append("<p>Self-taught programmer with experience using a vast array of languages.</p>");
-            sb.Append("<p>These days I focus on C# ASP.NET using frameworks such as MVC4 and EF. I have been writing code in C# consistently since 2006, having experience with .NET 2.0 and ASP.NET web forms right up to .NET 4.5 and MVC4.</p>");
-            sb.Append("<p>I am also a deft hand at design, having years of experience in hand-coding designs using HTML/CSS and using frameworks such as Bootstrap, Foundation and jQuery as well as design software like Adobe Photoshop, Illustrator and even InDesign for print media.</p>");            
+            sb.Append("<p>Programador autoditada com experiência no uso de uma grande variedade de linguagens de programação.</p>");
+            sb.Append("<p>Nos dias autais eu me concentro em C# ASP.NET utilizando MVC4 e EF voltados para soluções mobile e em nuvem (Azure).</p>");
+            sb.Append("<p>Também possuo habilidades em design, com experiência em codificação de projetos usando HTML / CSS e utilizando jQuery, também com o auxílio de softwares de design como Adobe Photoshop.</p>");            
             model.Blurb = sb.ToString();
 
             return PartialView(model);
@@ -54,47 +54,47 @@ namespace PersonalWebsite.Controllers
             var secondarySkills = new List<Skill>();
 
             // primary skills
-            primarySkills.Add(new Skill(80, "C#",
-                @"Understanding: Very Strong<br>" + 
-                "Experience: 6 Years<br><br>" +
-                "My primary language for both software and web development. Technologies include MSSQL, MySQL, MVC, EF, XNA, Mono and more."
+            primarySkills.Add(new Skill(70, "C#",
+                @"Conhecimento: Moderado<br>" + 
+                "Experiência: 2 anos<br><br>" +
+                "Linguagem preferida para desenvolvimento de software e web. Tecnologias incluem MSSQL, MVC, EF, Azure, Mobile, etc"
             ));
             primarySkills.Add(new Skill(70, "ASP.NET",
-                "Understanding: Strong<br>" +
-                "Experience: 5 Years<br><br>" +
-                "My go to framework for web applications. I have experience with asp.net-webforms but focus more on asp.net-mvc these days."
+                "Conhecimento: Moderado<br>" +
+                "Experiência: 2 anos<br><br>" +
+                "Ambiente preferido para desenvolvimento web."
             ));
             primarySkills.Add(new Skill(60, "MVC",
-                "Understanding: Solid<br>" +
-                "Experience: 1 Year<br><br>" +
-                "I've been focusing on learning MVC this past year, primarily asp.net-mvc. I have a solid understanding of how it works."
+                "Conhecimento: Sólido<br>" +
+                "Experiência: 1 ano<br><br>" +
+                "O foco do meu aprendizado nos últimos anos."
             ));
 
             // secondary skills
             secondarySkills.Add(new Skill(80, "HTML",
-                "Understanding: Very Strong<br>" +
-                "Experience: 8 Years<br><br>" +
-                "I have been writing HTML for almost as long as I've been programming. I can hand code designs, but also have experience of boilerplate frameworks like Bootstrap and Foundation."
+                "Conhecimento: Avançado<br>" +
+                "Experiência: 3 anos<br><br>" +
+                "Linguagem mais usada em toda a minha carreira quando considerados os projetos web"
             ));
             secondarySkills.Add(new Skill(70, "CSS",
-                "Understanding: Strong<br>" +
-                "Experience: 7 Years<br><br>" +
-                "CSS has been helping me make my websites look good for the last seven years or so. I like to think I am well acquainted with it's many features and intricacies."
+                "Conhecimento: Moderado<br>" +
+                "Experiência: 3 anos<br><br>" +
+                "Juntamente com HTML fez parte da minha trajetória desde o início"
             ));
             secondarySkills.Add(new Skill(50, "JS",
-                "Understanding: Good<br>" +
-                "Experience: 2+ Years<br><br>" +
-                "My use of JavaScript has been sporadic. I don't focus on it primarily but have had success applying both jQuery and classic javascript to websites and canvas apps."
+                "Conhecimento: Bom<br>" +
+                "Experiência: 2 anos<br><br>" +
+                "Meu uso de JavaScript tem sido esporárido. Não é o meu foco porém tenho obtido sucesso em implementações jQuery e javascript"
             ));
             secondarySkills.Add(new Skill(60, "PHP",
-                "Understanding: Solid<br>" +
-                "Experience: 5 Years<br><br>" +
-                "My first web development language. I have a solid understanding of it, but focus more on .NET these days."
+                "Conhecimento: Sólido<br>" +
+                "Experiência: 3 anos<br><br>" +
+                "Primeira linguagem de programação web que tive contato. Tenho um conhecimento sólido, porém atualmente foco mais em .NET"
             ));
             secondarySkills.Add(new Skill(60, "SQL",
-                "Understanding: Solid<br>" +
-                "Experience: 8 Years<br><br>" +
-                "I have a solid understanding of SQL and experience using all sorts of it from MySQL and MSSQL to Transact-SQL and Stored Procedures."
+                "Conhecimento: Sólido<br>" +
+                "Experiência: 2 anos<br><br>" +
+                "Tenho um conhecimento sólido de consultas-SQL e administração, assim como MySQL, Oracle e DB2 (multibanco)"
             ));
 
             model.PrimarySkills = primarySkills;
@@ -109,12 +109,12 @@ namespace PersonalWebsite.Controllers
             var model = new TraitsViewModel();
 
             var traits = new List<Trait>();
-            traits.Add(new Trait("Fast Learner", "Can quickly research, understand and use unfamiliar software technologies, tools and languages."));
-            traits.Add(new Trait("Pragmatic", "Able to make a value judgement about what is really important, values practical outcomes and getting the job done, avoids gold plating."));
-            traits.Add(new Trait("Honest", "Can admit mistakes, unafraid to admit they don't know something."));
-            traits.Add(new Trait("Inquisitive Learner", "Actively self educates, reads and researches, willing to learn from others, always believes there is always much more to learn."));
-            traits.Add(new Trait("Problem Solver", "Knows how to attack a problem and has the tenacity to solve even very hard problems, uses appropriate debugging tools."));
-            traits.Add(new Trait("Researcher", "Good at ferreting out information: digging through documentation, searching the web, reading reference guides, release notes, discussion forums, mailing lists.<br><br>Knows how to find answers."));
+            traits.Add(new Trait("Autodidata", "Facilidade em pesquisar rapidamente, entender e usar tecnologias de software, ferramentas e linguagens desconhecidas."));
+            traits.Add(new Trait("Pragmático", "Capaz de realizar juízo de valor sobre o que é realmente importante, valorizando resultados práticos e o trabalho feito."));
+            traits.Add(new Trait("Humilde", "Admite os erros, sem medo de admitir que não sabe algo."));
+            traits.Add(new Trait("Inquisitivo", "Se autoeduca ativamente, lê e pesquisa, buscando aprender de outros, acreditando que sempre há mais para aprender."));
+            traits.Add(new Trait("Solucionador", "Sabe como atacar um problema e tem a técnica para resolver até mesmo os problemas mais difíceis, usando ferramentas adequadas"));
+            traits.Add(new Trait("Pesquisador", "Consegue extrair informações, buscando documentações, na web, lendo guias, notas, fóruns de discussão, etc.<br><br>Sabe encontrar respostas."));
             model.Traits = traits;
 
             return PartialView(model);

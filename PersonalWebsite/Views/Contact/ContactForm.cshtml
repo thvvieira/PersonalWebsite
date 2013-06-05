@@ -2,11 +2,11 @@
 @using PoliteCaptcha
 @model PersonalWebsite.Models.Contact.ContactFormViewModel
 
-<h4>Contact Form</h4>
+<h4>Formulário de contato</h4>
 
 @if (Model == null || !Model.Success)
 {
-    <p>The easiest way to contact me is to scribble something below and fire it to me</p>
+    @*<p>The easiest way to contact me is to scribble something below and fire it to me</p>*@
     
     <div class="row contactform">
         <div class="twelve columns">
@@ -67,8 +67,8 @@
 }
 else
 {
-    <p>Thanks!</p>
-    <p>Your message has been sent. I'll try to respond to you soon!</p>
+    <p>Obrigado!</p>
+    <p>Sua mensagem foi enviada. </p>
 }
 
 @Html.SpamPreventionScript()

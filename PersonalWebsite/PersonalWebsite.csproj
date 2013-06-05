@@ -220,12 +220,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\fonts\iconic_fill.svg" />
+    <Content Include="Content\images\certs.png" />
     <Content Include="Content\images\checkbox.png" />
     <Content Include="Content\images\checkbox_checked.png" />
     <Content Include="Content\images\checkbox_hover.png" />
     <Content Include="Content\images\comments.png" />
     <Content Include="Content\images\email.png" />
-    <Content Include="Content\images\favicon.ico" />
     <Content Include="Content\images\fork.png" />
     <Content Include="Content\images\foundation\orbit\bullets.jpg" />
     <Content Include="Content\images\foundation\orbit\left-arrow-small.png" />
@@ -237,12 +237,12 @@
     <Content Include="Content\images\foundation\orbit\right-arrow.png" />
     <Content Include="Content\images\foundation\orbit\rotator-black.png" />
     <Content Include="Content\images\foundation\orbit\timer-black.png" />
+    <Content Include="Content\images\portrait2.jpg" />
     <Content Include="Content\images\loading.gif" />
     <Content Include="Content\images\powered_by_coderbits.png" />
     <Content Include="Content\images\source.png" />
     <Content Include="Content\images\star.png" />
     <Content Include="Content\images\views.png" />
-    <Content Include="Content\images\portrait2.jpg" />
     <Content Include="Content\javascripts\auto-prettify.js" />
     <Content Include="Content\javascripts\foundation-app.js" />
     <Content Include="Content\javascripts\g.pie-min.js" />
@@ -281,7 +281,6 @@
     <Content Include="Content\javascripts\raphael-min.js" />
     <Content Include="Content\javascripts\tag-it.js" />
     <Content Include="Content\javascripts\tag-it.min.js" />
-    <Content Include="Content\images\portrait.jpg" />
     <Content Include="Content\stylesheets\app.css" />
     <Content Include="Content\stylesheets\foundation.css" />
     <Content Include="Content\stylesheets\iconic_fill.css" />
@@ -294,20 +293,12 @@
     <Content Include="Content\fonts\iconic_fill.otf" />
     <Content Include="Content\fonts\iconic_fill.ttf" />
     <Content Include="Content\fonts\iconic_fill.woff" />
-    <Content Include="Files\adamkdean-curriculum-vitae.pdf" />
+    <Content Include="Files\MS_Transcript_ThiagoVieira.pdf" />
     <None Include="Properties\PublishProfiles\adamkdean.co.uk via VPN.pubxml" />
     <None Include="Properties\PublishProfiles\adamkdean.co.uk.pubxml" />
     <None Include="Properties\PublishProfiles\local filesystem.pubxml" />
     <None Include="Properties\PublishProfiles\new.adamkdean.co.uk.pubxml" />
     <Content Include="T4MVC.tt.settings.xml" />
-    <Content Include="Web.config" />
-    <Content Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -348,9 +339,20 @@
     <Content Include="Views\Blog\SearchBar.cshtml" />
     <Content Include="Views\Profile\PieCharts.cshtml" />
     <Content Include="Views\Profile\CoderbitsFooter.cshtml" />
+    <Content Include="Web.config" />
+    <Content Include="Views\Web.config" />
+    <None Include="Properties\PublishProfiles\twebly - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\twebly - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Policy\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
